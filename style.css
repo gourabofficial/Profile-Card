@@ -6,7 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, #624489, #3c0b48);
+  background: linear-gradient(135deg, #386fd4, #8db9e7);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +15,10 @@ body {
 }
 
 .card { 
-  background: linear-gradient(135deg, #386fd4, #8db9e7);
+  background: linear-gradient(135deg, #5180d5, #78abe0);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   height: 70vh;
   max-width: 500px;
