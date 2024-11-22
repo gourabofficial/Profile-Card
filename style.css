@@ -6,130 +6,160 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #386fd4, #8db9e7);
-
+  background: linear-gradient(135deg, #141e30, #243b55);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: white;
 }
 
-.card { 
-  background: linear-gradient(135deg, #5180d5, #78abe0);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1);
+.card {
+  background: linear-gradient(135deg, #1e293b, #374151);
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 400px;
   text-align: center;
-  height: 70vh;
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  color: white;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
+  width: 60%; 
+  max-width: 300px; 
+  height: auto; 
+  margin: 0 auto 15px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid #140d0d;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-pic:hover {
-  border: 4px solid #140d0d;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 3px solid #4a90e2;
 }
 
 .profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
 }
 
+
+
 .name {
-  font-size: 1.6rem;
-  color: #000000;
-  font-weight: 900;
-  margin: 15px 0 5px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .bio {
   font-size: 1rem;
-  font-weight: 600;
-  color: #000000;
+  color: #d1d5db;
   margin-bottom: 20px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.about-section {
+  margin: 20px 0;
 }
 
-.social-icon {
-  display: inline-block;
-  padding: 12px 20px;
+.about-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.about-section p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d1d5db;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+}
+
+.skills-section {
+  margin: 20px 0;
+}
+
+.skills-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.skills {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #4a90e2;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.contact-section .social-links {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-section .social-icon {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: white;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
-.social-icon:hover {
+.contact-section .social-icon:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.2);
-}
-
-.social-icon.twitter {
-  background: linear-gradient(135deg, #1DA1F2, #0a84c1);
-}
-
-.social-icon.github {
-  background: linear-gradient(135deg, #333, #444);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .social-icon.linkedin {
-  background: linear-gradient(135deg, #0077B5, #005582);
+  background: #0077b5;
+}
+
+.social-icon.github {
+  background: #333;
+}
+
+.social-icon.twitter {
+  background: #1da1f2;
 }
 
 .social-icon.instagram {
   background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-@media (max-width: 480px) {
-  .profile-pic {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .name {
-    font-size: 1.4rem;
-  }
-
-  .bio {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .social-icon {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
 }
