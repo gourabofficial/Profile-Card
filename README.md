@@ -2,4 +2,6 @@
 
 # Scan the Qr Code
 
-![qrcode](Qrcode.jpeg)
+
+
+<img src="Qrcode.jpeg" alt="qrcode" width="200"/>
