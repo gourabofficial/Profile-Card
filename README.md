@@ -1,3 +1,5 @@
-# This is my Profile card 
-# All Socal media Links Here:
 
+
+# Scan the Qr Code
+
+![qrcode](Qrcode.jpeg)
